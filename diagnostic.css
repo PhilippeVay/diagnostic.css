@@ -56,6 +56,15 @@ a[href=""], a[href="#"], a:not([href]), a[href*=javascript\:], a[onclick]{
     border: 5px solid red !important;
 }
 
+/*
+	Empty link
+	@reference Technique for WCAG 2.0 G91: Providing link text that describes the purpose of a link - http://www.w3.org/TR/WCAG-TECHS/G91.html
+	@reference Technique for WCAG 2.0 H30: Providing link text that describes the purpose of a link for anchor elements - http://www.w3.org/TR/WCAG-TECHS/H30.html
+*/
+a:empty {
+    border: 5px solid red !important;
+}
+
 
 /** 
  *     form-related checks
