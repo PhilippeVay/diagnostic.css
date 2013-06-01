@@ -103,6 +103,25 @@ label:not([for]){
     border: 5px solid red !important;
 }
 
+/* Missing 'id' attribute on a form field @TODO HTML5 new types of form fields */
+input[type="text"]:not([id]),
+input[type="password"]:not([id]),
+input[type="checkbox"]:not([id]),
+input[type="radio"]:not([id]),
+input[type="file"]:not([id]),
+select:not([id]),
+textarea:not([id]) {
+    border: 5px solid red !important;
+}
+/* More obvious styling because border-widh is ignored for "file" type at least on Firefox */
+input[type="file"]:not([id]) {
+	background-color: red !important;
+}
+/* Different styling because border is ignored on radio and checkbox at least on Firefox */
+input[type="checkbox"]:not([id]),
+input[type="radio"]:not([id]) {
+	outline: 5px solid red !important;
+}
 
 
 /*
