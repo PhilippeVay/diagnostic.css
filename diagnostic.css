@@ -103,7 +103,10 @@ label:not([for]){
     border: 5px solid red !important;
 }
 
-/* Missing 'id' attribute on a form field @TODO HTML5 new types of form fields */
+/* Missing 'id' attribute on a form field
+	@TODO HTML5 new types of form fields
+	@TODO Case of lacking an id AND a title would be better (see H65)
+*/
 input[type="text"]:not([id]),
 input[type="password"]:not([id]),
 input[type="checkbox"]:not([id]),
