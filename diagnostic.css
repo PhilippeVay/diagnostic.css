@@ -46,6 +46,7 @@ img[src="#"]{
     border: 5px solid red !important;
 }
 
+
 /**
  *     Link-related checks
  */
@@ -54,8 +55,6 @@ img[src="#"]{
 a[href=""], a[href="#"], a:not([href]), a[href*=javascript\:], a[onclick]{
     border: 5px solid red !important;
 }
-
-
 
 
 /** 
@@ -173,7 +172,7 @@ meta[http-equiv=refresh] {
 
 /*
 	Lang attribute on html element
-	@reference Technique for WCAG 2.0 H57: Using language attributes on the html element  - http://www.w3.org/TR/WCAG-TECHS/F40.html
+	@reference Technique for WCAG 2.0 H57: Using language attributes on the html element  - http://www.w3.org/TR/WCAG-TECHS/H57.html
 */
 html[lang] {
 	display: block;
