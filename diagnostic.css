@@ -82,6 +82,19 @@ fieldset > legend:first-child {
 	outline: 3px solid green !important;
 }
 
+/*
+	Input of type submit or button with the non-descriptive text "OK|Ok|ok" and no title
+	@reference Technique for WCAG 2.0 H91: Using HTML form controls and links - http://www.w3.org/TR/WCAG-TECHS/H91.html
+	@TODO Case of empty button element
+	@TODO case of input with type button
+*/
+input[type="submit"][value="OK"]:not[title]), input[type="submit"][value="Ok"]:not[title]), input[type="submit"][value="ok"]:not[title]), 
+input[type="image"][value="OK"]:not[title]), input[type="image"][value="Ok"]:not[title]), input[type="image"][value="ok"]:not[title]) {
+	display: block;
+	background-color: orange !important;
+	width: 100px !important;
+	height: 2em !important;
+}
 
 /*
 	Input[type="image"] and their alt attribute
@@ -96,7 +109,6 @@ input[type="image"]:not([alt]) {
 	width: 200px !important;
 	height: 3em !important;
 }
-
 
 /* Missing 'for' attribute on a label */
 label:not([for]){
