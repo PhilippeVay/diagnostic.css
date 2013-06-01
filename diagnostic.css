@@ -230,3 +230,22 @@ td[width],
 td[valign] {
     border: 5px solid red;
 }
+
+/*
+	Scope in tables
+*/
+/* Using scope on td is strange, though not forbidden by H63 http://www.w3.org/TR/WCAG-TECHS/H63.html */
+td[scope] {
+	border: 2px solid orange !important;
+}
+td[scope]:before {
+	content: 'Better use th! ';
+	color: white
+	background-color: orange;
+}
+
+/* Using scope on header for multiple columns or row @TODO Is it inaccessible? */
+th[colspan][scope],
+th[rowspan][scope] {
+	border: 3px solid red !important;
+}
